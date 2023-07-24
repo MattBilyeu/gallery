@@ -3,6 +3,17 @@
     flex-direction: column;
     max-width: 1200px;
     justify-content: center;
+    min-height: 100vh;
+}
+
+.transitionOne {
+    background: linear-gradient(to bottom, white, #c4a986);
+    padding-bottom: 2.5rem;
+}
+
+.transitionTwo {
+    background: linear-gradient(to bottom, #c4a986, black);
+    padding-bottom: 2.5rem;
 }
 
 .galleryItemsContainer {

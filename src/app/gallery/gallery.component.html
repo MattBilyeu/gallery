@@ -7,7 +7,9 @@
     <div class="transitionTwo"></div>
     <div class="galleryItemsContainer">
         <div class="galleryItem" *ngFor="let item of entries" (click)="onSelect(item.sys.id)">
-            <img [src]="item.fields.featuredImage.fields.file.url">
+            <div class="galleryImageContainer">
+                <img [src]="item.fields.featuredImage.fields.file.url">
+            </div>
             <h2 [innerHTML]="item.fields.title"></h2>
         </div>
     </div>

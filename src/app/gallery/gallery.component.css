@@ -4,6 +4,7 @@
     max-width: 1200px;
     justify-content: center;
     min-height: 100vh;
+    margin-top: 100px;
 }
 
 .transitionOne {
@@ -42,6 +43,12 @@
     align-self: center;
 }
 
+.galleryImageContainer {
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+}
+
 .galleryItem:hover {
     filter: brightness(80%);
 }
@@ -51,28 +58,13 @@
     animation: 0.5s galleryHover ease-in-out forwards;
 }
 
-.galleryItem:hover h2 {
-    animation: 0.5s h2Lift ease-in-out forwards;
-}
-
 @keyframes galleryHover {
     0% {
         width: 350px;
         height: 200px;
-        transform: translateX(0) translateY(0);
     }
     100% {
         width: 375px;
         height: 214px;
-        transform: translateX(-12.5px) translateY(-14px);
-    }
-}
-
-@keyframes h2Lift {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-14px);
     }
 }

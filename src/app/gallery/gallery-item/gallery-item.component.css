@@ -1,11 +1,16 @@
+.container {
+    margin-top: 100px;
+}
+
 .header {
     height: 300px;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header h1 {
@@ -22,6 +27,7 @@
     font-weight: bold;
     border-radius: 30px;
     cursor: pointer;
+    width: 75px;
 }
 
 .header .return:hover {
@@ -32,6 +38,8 @@
     float: left;
     margin: 2rem;
     border: thick solid black;
+    width: 350px;
+    height: 350px;
 }
 
 .discussionText {

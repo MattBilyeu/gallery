@@ -1,5 +1,5 @@
 <div class="container" *ngIf="activatedEntry">
-    <div class="header" [ngStyle]="{'background-image': 'url('+activatedEntry.fields.featuredImage.fields.file.url+')'}">
+    <div class="header" [ngStyle]="{'background-image': 'url('+activatedEntry.fields.bannerImage.fields.file.url+')'}">
         <h1 [innerHTML]="activatedEntry.fields.title"></h1>
         <button class="return" (click)="onReturn()">Return</button>
     </div>

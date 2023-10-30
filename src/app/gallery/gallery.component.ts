@@ -18,7 +18,6 @@ export class GalleryComponent implements OnInit {
     this.contentful.getEntries().then(
       entries => {
         this.entries = entries;
-        console.log(this.entries);
       }
     )
   }

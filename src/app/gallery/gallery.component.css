@@ -29,42 +29,30 @@
 
 .galleryItem {
     width: 350px;
-    height: 272px;
+    height: 350px;
     text-align: center;
     background-color: white;
     box-shadow: 4px 4px 0 lightgrey;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     overflow: hidden;
 }
 
 .galleryItem img {
     width: 350px;
-    height: 200x;
+    height: 250px;
     align-self: center;
+    overflow: hidden;
 }
 
-.galleryImageContainer {
+.galleryItem h2 {
     width: 350px;
-    height: 200px;
-    overflow: hidden;
+    height: 80px;
+    font-size: 36px;
 }
 
 .galleryItem:hover {
     filter: brightness(80%);
-}
-
-.galleryItem:hover img {
-    filter: brightness(80%);
-    animation: 0.5s galleryHover ease-in-out forwards;
-}
-
-@keyframes galleryHover {
-    0% {
-        width: 350px;
-        height: 200px;
-    }
-    100% {
-        width: 375px;
-        height: 214px;
-    }
 }

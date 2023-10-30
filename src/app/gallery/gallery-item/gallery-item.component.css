@@ -11,6 +11,7 @@
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .header h1 {
@@ -40,6 +41,7 @@
     border: thick solid black;
     width: 350px;
     height: 350px;
+    cursor: pointer;
 }
 
 .discussionText {
@@ -62,6 +64,49 @@
 .remainingImages img {
     width: 350px;
     border: thick solid white;
+    cursor: pointer;
+}
+
+.pop-up-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.photo-pop-up {
+    max-width: 1000px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left,
+.right,
+.close {
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.hidden {
+    display: none;
 }
 
 @keyframes onReturnAnimation {

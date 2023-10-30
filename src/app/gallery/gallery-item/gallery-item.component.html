@@ -4,13 +4,25 @@
         <button class="return" (click)="onReturn()">Return</button>
     </div>
     <div class="discussion">
-        <img [src]="activatedEntry.fields.discussionImage.fields.file.url" alt="Discussed Image">
+        <img [src]="activatedEntry.fields.discussionImage.fields.file.url" alt="Discussed Image" (click)="activatePopUp(0)">
         <div class="discussionText" [innerHTML]="activatedEntry.fields.discussion | toHtml"></div>
     </div>
     <div class="clearfix"></div>
     <div class="remainingImages">
-        <div class="imageContainer" *ngFor="let image of remainingImages">
-            <img [src]="image" alt="Gallery Image">
+        <div class="imageContainer" *ngFor="let image of allImages; let i = index">
+            <img [src]="image" alt="Gallery Image" (click)="activatePopUp(i)">
+        </div>
+    </div>
+</div>
+<div class="pop-up-bg" [ngClass]="{hidden: !popUpActive}">
+    <div class="carousel-container">
+        <div class="photo-pop-up">
+            <img [src]="allImages[popUpIndex]">
+        </div>
+        <div class="controls">
+            <div class="left" (click)="reversePhoto()"><</div>
+            <div class="close" (click)="disablePopUp()">Close</div>
+            <div class="right" (click)="advancePhoto()">></div>
         </div>
     </div>
 </div>

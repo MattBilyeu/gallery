@@ -9,7 +9,9 @@
             <div class="galleryImageContainer">
                 <img [src]="item.fields.featuredImage.fields.file.url">
             </div>
-            <h2 [innerHTML]="item.fields.title"></h2>
+            <div class="title-container">
+                <h2 [innerHTML]="item.fields.title"></h2>
+            </div>
         </div>
     </div>
 </div>

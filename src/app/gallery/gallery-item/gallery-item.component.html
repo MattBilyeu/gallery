@@ -20,9 +20,11 @@
             <img [src]="allImages[popUpIndex]">
         </div>
         <div class="controls">
-            <div class="left" (click)="reversePhoto()"><</div>
-            <div class="close" (click)="disablePopUp()">Close</div>
-            <div class="right" (click)="advancePhoto()">></div>
+            <div class="left" (click)="reversePhoto()"><span><</span></div>
+            <div class="right" (click)="advancePhoto()"><span>></span></div>
+        </div>
+        <div class="close-container">
+            <div class="close" (click)="disablePopUp()"><span>X</span></div>
         </div>
     </div>
 </div>

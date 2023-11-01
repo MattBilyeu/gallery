@@ -90,19 +90,21 @@
     max-width: 800px;
 }
 
-.controls {
+.carousel-container .content-container {
+    margin: 0 auto;
     position: relative;
-    top: -200px;
+}
+
+.controls,
+.close-container {
+    position: absolute;
+    top: 50%;
     display: flex;
     justify-content: space-between;
     background: none;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     height: 0;
-}
-
-span {
-    display: block;
 }
 
 .left,
@@ -124,20 +126,10 @@ span {
 }
 
 .close-container {
-    height: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.close {
-    border-radius: 50%;
-    position: relative;
-    top: -425px;
-    right: -350px;
-    width: 35px;
-    height: 35px;
-    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    justify-content: right;
 }
 
 .hidden {

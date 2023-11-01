@@ -16,15 +16,17 @@
 </div>
 <div class="pop-up-bg" [ngClass]="{hidden: !popUpActive}">
     <div class="carousel-container">
-        <div class="photo-pop-up">
-            <img [src]="allImages[popUpIndex]">
-        </div>
-        <div class="controls">
-            <div class="left" (click)="reversePhoto()"><span><</span></div>
-            <div class="right" (click)="advancePhoto()"><span>></span></div>
-        </div>
-        <div class="close-container">
-            <div class="close" (click)="disablePopUp()"><span>X</span></div>
+        <div class="content-container">
+            <div class="photo-pop-up">
+                <img [src]="allImages[popUpIndex]">
+            </div>
+            <div class="controls">
+                <div class="left" (click)="reversePhoto()"><</div>
+                <div class="right" (click)="advancePhoto()">></div>
+            </div>
+            <div class="close-container">
+                <div class="close" (click)="disablePopUp()">X</div>
+            </div>
         </div>
     </div>
 </div>

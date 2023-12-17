@@ -1,0 +1,14 @@
+<div class="container" *ngIf="activatedEntry">
+    <div class="imagesContainer">
+        <div class="mainImage">
+            <img [src]="allImages[selectedIndex]" alt="Featured Reno Photo">
+            <div class="controls">
+                <div class="left" (click)="leftImage()"><</div>
+                <div (click)="rightImage()" class="right">></div>
+            </div>
+        </div>
+        <div class="allPhotos">
+            <img (click)="selectImage(i)" [src]="image" alt="Reno Photo" *ngFor="let image of allImages, let i = index">
+        </div>
+    </div>
+</div>

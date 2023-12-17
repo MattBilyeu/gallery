@@ -4,7 +4,7 @@
     max-width: 1200px;
     justify-content: center;
     min-height: 100vh;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .transitionOne {
@@ -31,8 +31,8 @@
     width: 350px;
     height: 350px;
     text-align: center;
-    background-color: white;
-    box-shadow: 4px 4px 0 lightgrey;
+    /* background-color: white; */
+    /* box-shadow: 4px 4px 0 lightgrey; */
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -67,4 +67,5 @@
     margin: 0;
     vertical-align: middle;
     font-size: 4rem;
+    color: white;
 }

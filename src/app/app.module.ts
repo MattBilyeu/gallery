@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryItemComponent } from './gallery/gallery-item/gallery-item.component';
 import { ToHtmlPipe } from './shared/to-html.pipe';
+import { ImagesComponent } from './images/images.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GalleryComponent,
     GalleryItemComponent,
-    ToHtmlPipe
+    ToHtmlPipe,
+    ImagesComponent
   ],
   imports: [
     BrowserModule,

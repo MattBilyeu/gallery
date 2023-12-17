@@ -29,13 +29,11 @@ export class GalleryItemComponent implements OnInit {
         entries.forEach((entry)=> {
           if(entry.sys.id === this.entryID) {
             this.activatedEntry = entry;
-            this.allImages.push(this.activatedEntry.fields.discussionImage.fields.file.url);
             this.activatedEntry.fields.remainingImages.forEach((image: any)=> {
               this.allImages.push(image.fields.file.url);
             })
           }
         });
-        console.log(this.allImages);
       })
   }
 
@@ -69,4 +67,7 @@ export class GalleryItemComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  getRelativeUrl(path: string) {
+    return `https://sovereign-development.netlify.app/gallery/#${path}`
+  }
 }

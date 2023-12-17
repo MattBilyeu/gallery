@@ -1,0 +1,57 @@
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mainImage {
+    margin: 175px auto 25px auto;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    justify-content: center;
+}
+
+.mainImage img {
+    max-height: 90vh;
+    max-width: 1200px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    color: white;
+}
+
+.controls div {
+    padding: 1rem;
+    background-color: grey;
+    border: solid white thin;
+}
+
+.allPhotos {
+    background-color: black;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.allPhotos img {
+    width: 350px;
+    cursor: pointer
+}
+
+@media screen and (max-width: 760px) {
+    .mainImage {
+        display: none;
+    }
+
+    .allPhotos {
+        flex-direction: column;
+        margin-top: 150px;
+    }
+}

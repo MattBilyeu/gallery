@@ -8,11 +8,14 @@
         <div class="discussionText" [innerHTML]="activatedEntry.fields.discussion | toHtml"></div>
     </div>
     <div class="clearfix"></div>
-    <div class="remainingImages">
-        <div class="imageContainer" *ngFor="let image of allImages; let i = index">
-            <img [src]="image" alt="Gallery Image" (click)="activatePopUp(i)">
+    <a [href]="getRelativeUrl('images/' + entryID)" target="_blank">
+        <div class="remainingImages">
+            <div class="imageContainer" *ngFor="let image of allImages; let i = index">
+                <img [src]="image" alt="Gallery Image">
+                <!-- <img [src]="image" alt="Gallery Image" (click)="activatePopUp(i)"> -->
+            </div>
         </div>
-    </div>
+    </a>
 </div>
 <div class="pop-up-bg" [ngClass]="{hidden: !popUpActive}">
     <div class="carousel-container">

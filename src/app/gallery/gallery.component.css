@@ -29,10 +29,7 @@
 
 .galleryItem {
     width: 350px;
-    height: 350px;
     text-align: center;
-    /* background-color: white; */
-    /* box-shadow: 4px 4px 0 lightgrey; */
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -42,7 +39,6 @@
 
 .galleryItem img {
     width: 350px;
-    height: 250px;
     align-self: center;
     overflow: hidden;
 }

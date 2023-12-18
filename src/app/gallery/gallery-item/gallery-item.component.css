@@ -40,7 +40,7 @@
     margin: 2rem;
     border: thick solid black;
     width: 350px;
-    height: 350px;
+    /* height: 350px; */
     cursor: pointer;
 }
 

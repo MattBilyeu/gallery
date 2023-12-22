@@ -82,6 +82,6 @@ export class GalleryItemComponent implements OnInit {
   }
 
   getRelativeUrl(id: string) {
-    return `https://sovereign-development.netlify.app/gallery/#images/${id}`
+    return `https://sovereign-renovations.com/gallery/#images/${id}`
   }
 }
